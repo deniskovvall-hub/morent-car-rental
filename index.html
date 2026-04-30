@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <h2 class="header__logo">MORENT</h2>
+        <div class="header__search-bar">
+          <svg
+            class="header__search-icon"
+            width="24"
+            height="24"
+            aria-hidden="true"
+          >
+            <use href="./images/sprite.svg#icon-search-normal"></use>
+          </svg>
+          <input
+            id="header-search"
+            class="header__search-input"
+            type="text"
+            placeholder="Search something here"
+          />
+          <button type="button" class="header__filter-btn" aria-label="Filters">
+            <svg width="24" height="24" aria-hidden="true">
+              <use href="./images/sprite.svg#icon-filter"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="header__box-icons">
+          <button type="button" class="header__icon-btn" aria-label="Favorites">
+            <svg class="header__icon" width="24" height="24" aria-hidden="true">
+              <use href="./images/sprite.svg#icon-heart"></use>
+            </svg>
+          </button>
+          <button
+            type="button"
+            class="header__icon-btn"
+            aria-label="Notifications"
+          >
+            <svg class="header__icon" width="24" height="24" aria-hidden="true">
+              <use href="./images/sprite.svg#icon-bell"></use>
+            </svg>
+          </button>
+          <button type="button" class="header__icon-btn" aria-label="Settings">
+            <svg class="header__icon" width="24" height="24" aria-hidden="true">
+              <use href="./images/sprite.svg#icon-setting"></use>
+            </svg>
+          </button>
+          <a href="#" class="header__avatar-link" aria-label="Profile">
+            <img
+              class="header__avatar"
+              src="./images/header/header__ava.png"
+              alt=""
+              width="44"
+              height="44"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__card__container">
+          <div class="hero__card--light">
+            <h2 class="hero__card--light-title">
+              The Best Platform <span class="br">for Car Rental</span>
+            </h2>
+            <p class="hero__card--text">
+              Ease of doing a car rental safely and reliably. Of course at a low
+              price.
+            </p>
+            <button class="hero__card-button-light">Rental Car</button>
+          </div>
+          <div class="hero__card--black">
+            <h2 class="hero__card--blac-title">
+              Easy way to rent a <span class="br">car at a low price</span>
+            </h2>
+            <p class="hero__card-text--black">
+              Providing cheap car rental services and safe and comfortable
+              facilities.
+            </p>
+            <button class="hero__card-button-black">Rental Car</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

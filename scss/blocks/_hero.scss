@@ -1,0 +1,117 @@
+.hero {
+  padding: 32px 0px 46px;
+
+  &__card--light {
+    flex: 1;
+    min-width: 0;
+    height: 360px;
+    border: 1px solid #54a6ff;
+    border-radius: 10px;
+    background-color: #54a6ff;
+    padding: 24px 0px 0px 24px;
+    background-image: url(/images/hero__section/light__card.png);
+  }
+
+  &__card--black {
+    flex: 1;
+    min-width: 0;
+    height: 360px;
+    background-color: #3563e9;
+    border: 1px solid #54a6ff;
+    border-radius: 10px;
+    padding: 24px 0px 0px 24px;
+    background-image: url(/images/hero__section/black__card.png);
+  }
+
+  &__card--light-title,
+  .hero__card--blac-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    color: var(--primary--white);
+    margin-bottom: 16px;
+  }
+
+  &__card--text {
+    color: var(--primary--white);
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    width: 284px;
+    font-style: normal;
+  }
+
+  &__card-button-light {
+    color: var(--primary--white);
+    background-color: #3563e9;
+    border: 1px solid #3563e9;
+    font-weight: 600;
+    font-size: 16;
+    padding: 10px 20px;
+    width: 120px;
+    height: 44px;
+  }
+
+  &__card-button-light:hover {
+    background-color: #173fb8;
+  }
+
+  &__card-button-light:active {
+    background-color: #1a37b5;
+    transform: translateY(1px);
+  }
+
+  &__card-button-light:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(53, 99, 233, 0.3);
+  }
+
+  &__card-button-light:disabled {
+    background-color: #c3d4e9;
+    color: #fff;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+  &__card-button-black {
+    color: var(--primary--white);
+    background-color: #54a6ff;
+    border: 1px solid #54a6ff;
+    font-weight: 600;
+    font-size: 16;
+    padding: 10px 20px;
+    width: 120px;
+    height: 44px;
+  }
+
+  &__card-button-black:hover {
+    background-color: #327ecf;
+    border: #327ecf;
+  }
+
+  &__card-button-black:active {
+    background-color: #327ecf;
+    transform: translateY(1px);
+  }
+
+  &__card-button-black:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(53, 99, 233, 0.3);
+  }
+
+  &__card-text--black {
+    color: var(--primary--white);
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.24;
+    letter-spacing: -0.02em;
+    width: 284px;
+    font-style: normal;
+  }
+
+  &__card__container {
+    display: flex;
+    gap: 32px;
+  }
+}
