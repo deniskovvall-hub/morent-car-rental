@@ -9,7 +9,9 @@
   <body>
     <header class="header">
       <div class="header__container">
-        <h2 class="header__logo">MORENT</h2>
+        <a href="#">
+          <h2 class="header__logo">MORENT</h2>
+        </a>
         <div class="header__search-bar">
           <svg
             class="header__search-icon"
@@ -65,29 +67,780 @@
     </header>
     <section class="hero">
       <div class="container">
-        <div class="hero__card__container">
-          <div class="hero__card--light">
-            <h2 class="hero__card--light-title">
+        <div class="hero__cards">
+          <div class="hero__card hero__card--light">
+            <h2 class="hero__card-title">
               The Best Platform <span class="br">for Car Rental</span>
             </h2>
-            <p class="hero__card--text">
+            <p class="hero__card-text">
               Ease of doing a car rental safely and reliably. Of course at a low
               price.
             </p>
-            <button class="hero__card-button-light">Rental Car</button>
+            <button class="hero__card-btn hero__card-btn--blue">
+              Rental Car
+            </button>
           </div>
-          <div class="hero__card--black">
-            <h2 class="hero__card--blac-title">
+          <div class="hero__card hero__card--dark">
+            <h2 class="hero__card-title">
               Easy way to rent a <span class="br">car at a low price</span>
             </h2>
-            <p class="hero__card-text--black">
+            <p class="hero__card-text">
               Providing cheap car rental services and safe and comfortable
               facilities.
             </p>
-            <button class="hero__card-button-black">Rental Car</button>
+            <button class="hero__card-btn hero__card-btn--light">
+              Rental Car
+            </button>
+          </div>
+        </div>
+        <div class="booking">
+          <div class="booking__panel booking__panel--pick">
+            <div class="booking__panel-header">
+              <svg width="16" height="16" aria-hidden="true">
+                <use href="./images/sprite.svg#icon-mark"></use>
+              </svg>
+              <p class="booking__panel-label">Pick - Up</p>
+            </div>
+            <div class="booking__fields">
+              <div class="booking__field">
+                <p class="booking__field-label">Locations</p>
+                <div class="booking__field-value">
+                  <span>Select your city</span>
+                  <svg width="10" height="5" aria-hidden="true">
+                    <use href="./images/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </div>
+              </div>
+              <span class="booking__divider"></span>
+              <div class="booking__field">
+                <p class="booking__field-label">Date</p>
+                <div class="booking__field-value">
+                  <span>Select your date</span>
+                  <svg width="10" height="5" aria-hidden="true">
+                    <use href="./images/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </div>
+              </div>
+              <span class="booking__divider"></span>
+              <div class="booking__field">
+                <p class="booking__field-label">Time</p>
+                <div class="booking__field-value">
+                  <span>Select your time</span>
+                  <svg width="10" height="5" aria-hidden="true">
+                    <use href="./images/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button
+            type="button"
+            class="booking__swap"
+            aria-label="Swap pick-up and drop-off"
+          >
+            <svg width="24" height="24" aria-hidden="true">
+              <use href="./images/sprite.svg#icon-swap"></use>
+            </svg>
+          </button>
+
+          <div class="booking__panel booking__panel--drop">
+            <div class="booking__panel-header">
+              <svg width="16" height="16" aria-hidden="true">
+                <use href="./images/sprite.svg#icon-mark"></use>
+              </svg>
+              <p class="booking__panel-label">Drop - Off</p>
+            </div>
+            <div class="booking__fields">
+              <div class="booking__field">
+                <p class="booking__field-label">Locations</p>
+                <div class="booking__field-value">
+                  <span>Select your city</span>
+                  <svg width="10" height="5" aria-hidden="true">
+                    <use href="./images/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </div>
+              </div>
+              <span class="booking__divider"></span>
+              <div class="booking__field">
+                <p class="booking__field-label">Date</p>
+                <div class="booking__field-value">
+                  <span>Select your date</span>
+                  <svg width="10" height="5" aria-hidden="true">
+                    <use href="./images/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </div>
+              </div>
+              <span class="booking__divider"></span>
+              <div class="booking__field">
+                <p class="booking__field-label">Time</p>
+                <div class="booking__field-value">
+                  <span>Select your time</span>
+                  <svg width="10" height="5" aria-hidden="true">
+                    <use href="./images/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <section class="popular-car">
+      <div class="container">
+        <div class="popular-car__header">
+          <h2 class="popular-car__title">Popular Car</h2>
+          <a href="#" class="popular-car__view-all">View all</a>
+        </div>
+        <div class="popular-car__list">
+          <div class="popular-card">
+            <div class="popular-card__header">
+              <h2 class="popular-card__title">Koenigsegg</h2>
+              <button
+                type="button"
+                class="popular-card__like popular-card__like--active"
+                aria-label="Remove from favorites"
+                aria-pressed="true"
+              >
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </div>
+            <p class="popular-card__category">Sport</p>
+            <img
+              class="popular-card__image"
+              src="./images/popular-car/first-car.png"
+              alt="Koenigsegg sport car"
+            />
+            <div class="popular-card__specs">
+              <div class="popular-card__spec">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-gas-station"></use>
+                </svg>
+                <p class="popular-card__spec-text">90L</p>
+              </div>
+              <div class="popular-card__spec">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-car"></use>
+                </svg>
+                <p class="popular-card__spec-text">Manual</p>
+              </div>
+              <div class="popular-card__spec">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-profile-2user"></use>
+                </svg>
+                <p class="popular-card__spec-text">2 People</p>
+              </div>
+            </div>
+            <div class="popular-card__price-box">
+              <p class="popular-card__price">
+                $99.00/<span class="popular-card__day">day</span>
+              </p>
+              <button class="popular-card__button">Rent Now</button>
+            </div>
+          </div>
+          <div class="popular-card">
+            <div class="popular-card__header">
+              <h2 class="popular-card__title">Nissan GT - R</h2>
+              <button
+                type="button"
+                class="popular-card__like"
+                aria-label="Add to favorites"
+                aria-pressed="false"
+              >
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </div>
+            <p class="popular-card__category">Sport</p>
+            <img
+              class="popular-card__image"
+              src="./images/popular-car/Nissan GT - R.png"
+              alt="Nissan GT-R sport car"
+            />
+            <div class="popular-card__specs">
+              <div class="popular-card__spec">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-gas-station"></use>
+                </svg>
+                <p class="popular-card__spec-text">80L</p>
+              </div>
+              <div class="popular-card__spec">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-car"></use>
+                </svg>
+                <p class="popular-card__spec-text">Manual</p>
+              </div>
+              <div class="popular-card__spec">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-profile-2user"></use>
+                </svg>
+                <p class="popular-card__spec-text">2 People</p>
+              </div>
+            </div>
+            <div class="popular-card__price-box">
+              <div class="popular-card__price-group">
+                <p class="popular-card__price">
+                  $80.00/<span class="popular-card__day">day</span>
+                </p>
+                <p class="popular-card__price-old">$100.00</p>
+              </div>
+              <button class="popular-card__button">Rent Now</button>
+            </div>
+          </div>
+          <div class="popular-card">
+            <div class="popular-card__header">
+              <h2 class="popular-card__title">Rolls - Royce</h2>
+              <button
+                type="button"
+                class="popular-card__like popular-card__like--active"
+                aria-label="Remove from favorites"
+                aria-pressed="true"
+              >
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </div>
+            <p class="popular-card__category">Sedan</p>
+            <img
+              class="popular-card__image"
+              src="./images/popular-car/Rolls - Royce.png"
+              alt="Rolls-Royce sedan"
+            />
+            <div class="popular-card__specs">
+              <div class="popular-card__spec">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-gas-station"></use>
+                </svg>
+                <p class="popular-card__spec-text">70L</p>
+              </div>
+              <div class="popular-card__spec">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-car"></use>
+                </svg>
+                <p class="popular-card__spec-text">Manual</p>
+              </div>
+              <div class="popular-card__spec">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-profile-2user"></use>
+                </svg>
+                <p class="popular-card__spec-text">4 People</p>
+              </div>
+            </div>
+            <div class="popular-card__price-box">
+              <p class="popular-card__price">
+                $96.00/<span class="popular-card__day">day</span>
+              </p>
+              <button class="popular-card__button">Rent Now</button>
+            </div>
+          </div>
+          <div class="popular-card">
+            <div class="popular-card__header">
+              <h2 class="popular-card__title">Nissan GT - R</h2>
+              <button
+                type="button"
+                class="popular-card__like"
+                aria-label="Add to favorites"
+                aria-pressed="false"
+              >
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </div>
+            <p class="popular-card__category">Sport</p>
+            <img
+              class="popular-card__image"
+              src="./images/popular-car/Nissan GT - R.png"
+              alt="Nissan GT-R sport car"
+            />
+            <div class="popular-card__specs">
+              <div class="popular-card__spec">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-gas-station"></use>
+                </svg>
+                <p class="popular-card__spec-text">80L</p>
+              </div>
+              <div class="popular-card__spec">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-car"></use>
+                </svg>
+                <p class="popular-card__spec-text">Manual</p>
+              </div>
+              <div class="popular-card__spec">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-profile-2user"></use>
+                </svg>
+                <p class="popular-card__spec-text">2 People</p>
+              </div>
+            </div>
+            <div class="popular-card__price-box">
+              <div class="popular-card__price-group">
+                <p class="popular-card__price">
+                  $80.00/<span class="popular-card__day">day</span>
+                </p>
+                <p class="popular-card__price-old">$100.00</p>
+              </div>
+              <button class="popular-card__button">Rent Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="recomendation-car">
+      <div class="container">
+        <div class="popular-car__header">
+          <h2 class="popular-car__title">Recomendation Car</h2>
+        </div>
+        <div class="popular-car__list">
+          <div class="popular-card">
+            <div class="popular-card__header">
+              <h2 class="popular-card__title">All New Rush</h2>
+              <button
+                type="button"
+                class="popular-card__like"
+                aria-label="Add to favorites"
+                aria-pressed="false"
+              >
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </div>
+            <p class="popular-card__category">SUV</p>
+            <img
+              class="popular-card__image"
+              src="./images/recomed-car/first.png"
+              alt="All New Rush SUV"
+            />
+            <div class="popular-card__specs">
+              <div class="popular-card__spec">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-gas-station"></use>
+                </svg>
+                <p class="popular-card__spec-text">70L</p>
+              </div>
+              <div class="popular-card__spec">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-car"></use>
+                </svg>
+                <p class="popular-card__spec-text">Manual</p>
+              </div>
+              <div class="popular-card__spec">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-profile-2user"></use>
+                </svg>
+                <p class="popular-card__spec-text">6 People</p>
+              </div>
+            </div>
+            <div class="popular-card__price-box">
+              <div class="popular-card__price-group">
+                <p class="popular-card__price">
+                  $72.00/<span class="popular-card__day">day</span>
+                </p>
+                <p class="popular-card__price-old">$80.00</p>
+              </div>
+              <button class="popular-card__button">Rent Now</button>
+            </div>
+          </div>
+          <div class="popular-card">
+            <div class="popular-card__header">
+              <h2 class="popular-card__title">CR - V</h2>
+              <button
+                type="button"
+                class="popular-card__like popular-card__like--active"
+                aria-label="Remove from favorites"
+                aria-pressed="true"
+              >
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </div>
+            <p class="popular-card__category">SUV</p>
+            <img
+              class="popular-card__image"
+              src="./images/recomed-car/CR-V.png"
+              alt="Honda CR-V SUV"
+            />
+            <div class="popular-card__specs">
+              <div class="popular-card__spec">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-gas-station"></use>
+                </svg>
+                <p class="popular-card__spec-text">80L</p>
+              </div>
+              <div class="popular-card__spec">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-car"></use>
+                </svg>
+                <p class="popular-card__spec-text">Manual</p>
+              </div>
+              <div class="popular-card__spec">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-profile-2user"></use>
+                </svg>
+                <p class="popular-card__spec-text">6 People</p>
+              </div>
+            </div>
+            <div class="popular-card__price-box">
+              <p class="popular-card__price">
+                $80.00/<span class="popular-card__day">day</span>
+              </p>
+              <button class="popular-card__button">Rent Now</button>
+            </div>
+          </div>
+          <div class="popular-card">
+            <div class="popular-card__header">
+              <h2 class="popular-card__title">All New Terios</h2>
+              <button
+                type="button"
+                class="popular-card__like"
+                aria-label="Add to favorites"
+                aria-pressed="false"
+              >
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </div>
+            <p class="popular-card__category">SUV</p>
+            <img
+              class="popular-card__image"
+              src="./images/recomed-car/All New Terios.png"
+              alt="All New Terios SUV"
+            />
+            <div class="popular-card__specs">
+              <div class="popular-card__spec">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-gas-station"></use>
+                </svg>
+                <p class="popular-card__spec-text">90L</p>
+              </div>
+              <div class="popular-card__spec">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-car"></use>
+                </svg>
+                <p class="popular-card__spec-text">Manual</p>
+              </div>
+              <div class="popular-card__spec">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-profile-2user"></use>
+                </svg>
+                <p class="popular-card__spec-text">6 People</p>
+              </div>
+            </div>
+            <div class="popular-card__price-box">
+              <p class="popular-card__price">
+                $74.00/<span class="popular-card__day">day</span>
+              </p>
+              <button class="popular-card__button">Rent Now</button>
+            </div>
+          </div>
+          <div class="popular-card">
+            <div class="popular-card__header">
+              <h2 class="popular-card__title">CR - V</h2>
+              <button
+                type="button"
+                class="popular-card__like popular-card__like--active"
+                aria-label="Remove from favorites"
+                aria-pressed="true"
+              >
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </div>
+            <p class="popular-card__category">SUV</p>
+            <img
+              class="popular-card__image"
+              src="./images/recomed-car/CR-V2.png"
+              alt="Honda CR-V SUV"
+            />
+            <div class="popular-card__specs">
+              <div class="popular-card__spec">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-gas-station"></use>
+                </svg>
+                <p class="popular-card__spec-text">80L</p>
+              </div>
+              <div class="popular-card__spec">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-car"></use>
+                </svg>
+                <p class="popular-card__spec-text">Manual</p>
+              </div>
+              <div class="popular-card__spec">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-profile-2user"></use>
+                </svg>
+                <p class="popular-card__spec-text">6 People</p>
+              </div>
+            </div>
+            <div class="popular-card__price-box">
+              <p class="popular-card__price">
+                $80.00/<span class="popular-card__day">day</span>
+              </p>
+              <button class="popular-card__button">Rent Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="popular-car__list">
+          <div class="popular-card">
+            <div class="popular-card__header">
+              <h2 class="popular-card__title">MG ZX Exclusice</h2>
+              <button
+                type="button"
+                class="popular-card__like popular-card__like--active"
+                aria-label="Remove from favorites"
+                aria-pressed="true"
+              >
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </div>
+            <p class="popular-card__category">Hatchback</p>
+            <img
+              class="popular-card__image"
+              src="./images/recomed-car/MG ZX Exclusice.png"
+              alt="MG ZX Exclusice hatchback"
+            />
+            <div class="popular-card__specs">
+              <div class="popular-card__spec">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-gas-station"></use>
+                </svg>
+                <p class="popular-card__spec-text">70L</p>
+              </div>
+              <div class="popular-card__spec">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-car"></use>
+                </svg>
+                <p class="popular-card__spec-text">Manual</p>
+              </div>
+              <div class="popular-card__spec">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-profile-2user"></use>
+                </svg>
+                <p class="popular-card__spec-text">4 People</p>
+              </div>
+            </div>
+            <div class="popular-card__price-box">
+              <div class="popular-card__price-group">
+                <p class="popular-card__price">
+                  $76.00/<span class="popular-card__day">day</span>
+                </p>
+                <p class="popular-card__price-old">$80.00</p>
+              </div>
+              <button class="popular-card__button">Rent Now</button>
+            </div>
+          </div>
+          <div class="popular-card">
+            <div class="popular-card__header">
+              <h2 class="popular-card__title">New MG ZS</h2>
+              <button
+                type="button"
+                class="popular-card__like"
+                aria-label="Add to favorites"
+                aria-pressed="false"
+              >
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </div>
+            <p class="popular-card__category">SUV</p>
+            <img
+              class="popular-card__image"
+              src="./images/recomed-car/New MG ZS.png"
+              alt="New MG ZS SUV"
+            />
+            <div class="popular-card__specs">
+              <div class="popular-card__spec">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-gas-station"></use>
+                </svg>
+                <p class="popular-card__spec-text">80L</p>
+              </div>
+              <div class="popular-card__spec">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-car"></use>
+                </svg>
+                <p class="popular-card__spec-text">Manual</p>
+              </div>
+              <div class="popular-card__spec">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-profile-2user"></use>
+                </svg>
+                <p class="popular-card__spec-text">6 People</p>
+              </div>
+            </div>
+            <div class="popular-card__price-box">
+              <p class="popular-card__price">
+                $80.00/<span class="popular-card__day">day</span>
+              </p>
+              <button class="popular-card__button">Rent Now</button>
+            </div>
+          </div>
+          <div class="popular-card">
+            <div class="popular-card__header">
+              <h2 class="popular-card__title">MG ZX Excite</h2>
+              <button
+                type="button"
+                class="popular-card__like popular-card__like--active"
+                aria-label="Remove from favorites"
+                aria-pressed="true"
+              >
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </div>
+            <p class="popular-card__category">Hatchback</p>
+            <img
+              class="popular-card__image"
+              src="./images/recomed-car/MG ZX Excite.png"
+              alt="MG ZX Excite hatchback"
+            />
+            <div class="popular-card__specs">
+              <div class="popular-card__spec">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-gas-station"></use>
+                </svg>
+                <p class="popular-card__spec-text">90L</p>
+              </div>
+              <div class="popular-card__spec">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-car"></use>
+                </svg>
+                <p class="popular-card__spec-text">Manual</p>
+              </div>
+              <div class="popular-card__spec">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-profile-2user"></use>
+                </svg>
+                <p class="popular-card__spec-text">4 People</p>
+              </div>
+            </div>
+            <div class="popular-card__price-box">
+              <p class="popular-card__price">
+                $74.00/<span class="popular-card__day">day</span>
+              </p>
+              <button class="popular-card__button">Rent Now</button>
+            </div>
+          </div>
+          <div class="popular-card">
+            <div class="popular-card__header">
+              <h2 class="popular-card__title">New MG ZS</h2>
+              <button
+                type="button"
+                class="popular-card__like"
+                aria-label="Add to favorites"
+                aria-pressed="false"
+              >
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </div>
+            <p class="popular-card__category">SUV</p>
+            <img
+              class="popular-card__image"
+              src="./images/recomed-car/New MG ZS.png"
+              alt="New MG ZS SUV"
+            />
+            <div class="popular-card__specs">
+              <div class="popular-card__spec">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-gas-station"></use>
+                </svg>
+                <p class="popular-card__spec-text">80L</p>
+              </div>
+              <div class="popular-card__spec">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-car"></use>
+                </svg>
+                <p class="popular-card__spec-text">Manual</p>
+              </div>
+              <div class="popular-card__spec">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-profile-2user"></use>
+                </svg>
+                <p class="popular-card__spec-text">6 People</p>
+              </div>
+            </div>
+            <div class="popular-card__price-box">
+              <p class="popular-card__price">
+                $80.00/<span class="popular-card__day">day</span>
+              </p>
+              <button class="popular-card__button">Rent Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="recomendation-car__more">
+          <button type="button" class="recomendation-car__more-btn">
+            Show more car
+          </button>
+          <p class="recomendation-car__count">120 Car</p>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <a href="#">
+              <h2 class="footer__logo">MORENT</h2>
+            </a>
+            <p class="footer__text">
+              Our vision is to provide convenience and help increase your sales
+              business.
+            </p>
+          </div>
+          <nav class="footer__nav">
+            <div class="footer__col">
+              <h3 class="footer__col-title">About</h3>
+              <ul class="footer__list">
+                <li><a class="footer__link" href="#">How it works</a></li>
+                <li><a class="footer__link" href="#">Featured</a></li>
+                <li><a class="footer__link" href="#">Partnership</a></li>
+                <li><a class="footer__link" href="#">Bussiness Relation</a></li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h3 class="footer__col-title">Community</h3>
+              <ul class="footer__list">
+                <li><a class="footer__link" href="#">Events</a></li>
+                <li><a class="footer__link" href="#">Blog</a></li>
+                <li><a class="footer__link" href="#">Podcast</a></li>
+                <li><a class="footer__link" href="#">Invite a friend</a></li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h3 class="footer__col-title">Socials</h3>
+              <ul class="footer__list">
+                <li><a class="footer__link" href="#">Discord</a></li>
+                <li><a class="footer__link" href="#">Instagram</a></li>
+                <li><a class="footer__link" href="#">Twitter</a></li>
+                <li><a class="footer__link" href="#">Facebook</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="footer__divider"></div>
+        <div class="footer__bottom">
+          <p class="footer__copy">&copy;2022 MORENT. All rights reserved</p>
+          <div class="footer__legal">
+            <a class="footer__legal-link" href="#">Privacy &amp; Policy</a>
+            <a class="footer__legal-link" href="#">Terms &amp; Condition</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/main.js" defer></script>
   </body>
 </html>
