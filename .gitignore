@@ -11,8 +11,13 @@ Thumbs.db
 *.log
 npm-debug.log*
 
-# Dependencies (на майбутнє)
+# Dependencies
 node_modules/
 
-# SCSS source maps
-*.css.map
+# Next.js
+.next/
+out/
+build/
+
+# Env
+.env*.local
